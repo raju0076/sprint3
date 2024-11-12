@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        background-color: #333;
+        padding: 10px;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+      }
+
+      .navbar ul li {
+        margin-right: 20px;
+      }
+
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .navbar ul li a:hover {
+        color: #2927bd;
+      }
+      .users-cont {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 30px;
+        margin-left: 30px;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 10px;
+      }
+      .user {
+        display: flex;
+        width: 250px;
+        padding: 20px;
+        align-items: center;
+        height: 150px;
+        flex-direction: column;
+        background-color: floralwhite;
+        color: black;
+        border: 2px solid gray;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <div class="users-cont"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>
